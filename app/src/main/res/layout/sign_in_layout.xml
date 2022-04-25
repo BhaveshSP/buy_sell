@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/userNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name_hint"
+        app:layout_constraintTop_toBottomOf="@id/userNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        app:layout_constraintTop_toBottomOf="@id/userNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+
+        android:paddingHorizontal="12dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        />
+
+
+</LinearLayout>

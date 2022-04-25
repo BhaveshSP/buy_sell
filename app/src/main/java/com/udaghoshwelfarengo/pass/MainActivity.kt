@@ -1,7 +1,9 @@
 package com.udaghoshwelfarengo.pass
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.udaghoshwelfarengo.pass.ui.activities.SignInSignUpActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,6 +12,9 @@ class MainActivity : AppCompatActivity() {
         goToNextActivity()
     }
     private fun goToNextActivity(){
-//        startActivity(Inte)
+        Thread{
+            Thread.sleep(4000)
+            startActivity(Intent(this,SignInSignUpActivity::class.java))
+        }.start()
     }
 }
