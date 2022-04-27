@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/sign_in_layout"
+
+        />
+    <TextView
+        android:id="@+id/phoneNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number_hint"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        android:inputType="phone"
+        />
+
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address_hint"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        />
+
+
+    <TextView
+        android:id="@+id/companyNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/company_name"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/companyNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/company_name_hint"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        />
+
+
+    <TextView
+        android:id="@+id/panLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pan"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/panText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pan_hint"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/hintTextColor"
+        android:textColor="@color/textColor"
+        android:background="@color/white"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="12sp"
+        android:inputType="phone"
+        android:paddingHorizontal="12dp"
+        />
+
+
+
+</LinearLayout>

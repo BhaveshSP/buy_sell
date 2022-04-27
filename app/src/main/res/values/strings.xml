@@ -3,7 +3,24 @@
     <string name="app_tag_line">App Tag Line Text Is Here</string>
     <string name="sign_in">Sign In</string>
     <string name="user_name">Username</string>
-    <string name="user_name_hint">Enter Username</string>
+    <string name="user_name_hint">Enter Your Username</string>
     <string name="password">Password</string>
-    <string name="password_hint">Enter Password</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="or">Or</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_hint">Enter Your Phone Number</string>
+    <string name="address">Address</string>
+    <string name="address_hint">Enter Your Address</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_name_hint">Enter Your Company Name</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Enter Your Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="verify">Verify</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="pan">Pan Number</string>
+    <string name="pan_hint">Enter Your Pan Number</string>
+
 </resources>

@@ -7,5 +7,6 @@
     <color name="white">#ffffff</color>
     <color name="hintTextColor">#CAC9B8</color>
     <color name="textColor">#000000</color>
+    <color name="backgroundColor">#FAFAFA</color>
 
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.udaghoshwelfarengo.pass">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pass">
+        <activity
+            android:name=".ui.activities.VerifyUserActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.activities.SignInSignUpActivity"
             android:exported="false" />

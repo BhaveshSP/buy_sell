@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.udaghoshwelfarengo.pass.ui.activities.SignInSignUpActivity
+import com.udaghoshwelfarengo.pass.ui.activities.VerifyUserActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private fun goToNextActivity(){
         Thread{
             Thread.sleep(4000)
-            startActivity(Intent(this,SignInSignUpActivity::class.java))
+            startActivity(Intent(this,VerifyUserActivity::class.java))
         }.start()
     }
 }
