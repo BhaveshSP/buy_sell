@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "357872611908",
+    "project_id": "resso-clone-app",
+    "storage_bucket": "resso-clone-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357872611908:android:1e54fdfd36018af95a8211",
+        "android_client_info": {
+          "package_name": "com.udaghoshwelfarengo.pass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357872611908-lpml4ts9img2rdiiusn24tp7nj5edjag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udaghoshwelfarengo.pass",
+            "certificate_hash": "43f3973a101d825141d0cf8774a5670587a4bc50"
+          }
+        },
+        {
+          "client_id": "357872611908-l2mjeinp8ckcgo3jielu7gtp1vquf5aa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChJ1PHOfx9hH0Keq8Ni7Gb8-UhWY5iTOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357872611908-l2mjeinp8ckcgo3jielu7gtp1vquf5aa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
