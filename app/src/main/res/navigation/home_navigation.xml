@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/assetFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.AssetFragment"
+        android:label="fragment_asset"
+        tools:layout="@layout/fragment_asset" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/orderingFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.OrderingFragment"
+        android:label="fragment_ordering"
+        tools:layout="@layout/fragment_ordering" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

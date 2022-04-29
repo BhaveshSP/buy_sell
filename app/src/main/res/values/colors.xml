@@ -8,5 +8,5 @@
     <color name="hintTextColor">#CAC9B8</color>
     <color name="textColor">#000000</color>
     <color name="backgroundColor">#FAFAFA</color>
-
+    <color name="bottomBarTextColor">#28AC2D</color>
 </resources>

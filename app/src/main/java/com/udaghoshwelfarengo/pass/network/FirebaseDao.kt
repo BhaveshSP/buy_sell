@@ -20,8 +20,8 @@ class FirebaseDao {
             return reference.child(phoneNumber).child(authId).setValue(user)
         }
 
-        fun userDatabaseReference(phoneNumber: String,authId: String) : DatabaseReference{
-            return reference.child(phoneNumber).child(authId)
+        fun userDatabaseReference(phoneNumber: String,authId: String) : Task<DataSnapshot>{
+            return reference.child(phoneNumber).child(authId).get()
         }
 
     }
