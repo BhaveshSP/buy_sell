@@ -58,7 +58,6 @@ class VerifyUserActivity : AppCompatActivity() {
         verificationCode6 = findViewById(R.id.verificationCode6)
 
         verifyButton.setOnClickListener {
-            // TODO OTP VERIFY
             if(toggle){
                 // Check Sent Code
                 checkVerificationCode()
@@ -211,7 +210,7 @@ class VerifyUserActivity : AppCompatActivity() {
                 if (it.isSuccessful){
                     otpLayout.visibility = View.GONE
                     FirebaseAuth.getInstance().currentUser?.let {
-                        FirebaseDao.createUser(phoneNumber,it.uid)
+                        FirebaseDao.createUser(phoneNumber)
                     }
                     val editor = getSharedPreferences(SHARED_PREF, MODE_PRIVATE).edit()
                     editor.putString(PHONE_NUMBER_KEY,phoneNumber)

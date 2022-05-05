@@ -85,7 +85,7 @@ class SignUpFragment : Fragment() {
             val phoneNumber = requireActivity().getSharedPreferences(SHARED_PREF,MODE_PRIVATE).getString(
                 PHONE_NUMBER_KEY,"")
             if (phoneNumber != null) {
-                FirebaseDao.setUserData(user=user,phoneNumber=phoneNumber,authId = FirebaseAuth.getInstance().uid.toString()).addOnCompleteListener{
+                FirebaseDao.setUserData(user=user,phoneNumber=phoneNumber).addOnCompleteListener{
                     if (it.isComplete){
                         val navHost =  requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
                         navHost.navController.navigate(R.id.action_signUpFragment_to_signInFragment)

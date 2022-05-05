@@ -24,9 +24,34 @@
     <string name="pan_hint">Enter Your Pan Number</string>
     <string name="dash_board">Dashboard</string>
     <string name="asset">Asset</string>
-    <string name="ordering">Ordering</string>
+    <string name="ordering">Orders</string>
     <string name="history">History</string>
     <string name="profile">Profile</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_orders">Total Orders</string>
+    <string name="delivered_quantity">Delivered Quantity</string>
+    <string name="no_orders_found">No Ongoing Orders Found</string>
+    <string name="on_going_orders">All Ongoing Orders</string>
+    <string name="zero">0</string>
+    <string name="add_asset">Add Asset</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="no_history_to_show">No History to Show</string>
+    <string name="no_orders_to_show">No Orders to Show</string>
+    <string name="select_asset_type">Select Asset Type</string>
+    <string name="select_asset_name">Select Asset Name</string>
+    <string name="asset_name">Asset Name</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="asset_capacity">Asset Capacity</string>
+    <string name="location">Location</string>
+    <string name="location_hint">Enter Location</string>
+    <string name="asset_name_hint">Enter Asset Name </string>
+    <string name="asset_capacity_hint">Enter Asset Capacity</string>
+    <string name="add">Add</string>
+    <string name="asset_type">Asset Type</string>
+    <string name="user_greeting_text">Hello, \n%s</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="current_orders">Current Orders</string>
+    <string name="add_order">Add Order</string>
+    <string name="receiver_location">Receiver Location</string>
+    <string name="status">Status</string>
+    <string name="order_id">Order ID</string>
 </resources>

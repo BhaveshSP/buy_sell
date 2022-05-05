@@ -14,7 +14,11 @@
         android:id="@+id/assetFragment"
         android:name="com.udaghoshwelfarengo.pass.ui.fragments.AssetFragment"
         android:label="fragment_asset"
-        tools:layout="@layout/fragment_asset" />
+        tools:layout="@layout/fragment_asset" >
+        <action
+            android:id="@+id/action_assetFragment_to_addAssetFragment"
+            app:destination="@id/addAssetFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.udaghoshwelfarengo.pass.ui.fragments.HistoryFragment"
@@ -24,10 +28,32 @@
         android:id="@+id/orderingFragment"
         android:name="com.udaghoshwelfarengo.pass.ui.fragments.OrderingFragment"
         android:label="fragment_ordering"
-        tools:layout="@layout/fragment_ordering" />
+        tools:layout="@layout/fragment_ordering" >
+        <action
+            android:id="@+id/action_orderingFragment_to_addOrderFragment"
+            app:destination="@id/addOrderFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.udaghoshwelfarengo.pass.ui.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addAssetFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.AddAssetFragment"
+        android:label="fragment_add_asset"
+        tools:layout="@layout/fragment_add_asset" >
+        <action
+            android:id="@+id/action_addAssetFragment_to_assetFragment"
+            app:destination="@id/assetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOrderFragment"
+        android:name="com.udaghoshwelfarengo.pass.ui.fragments.AddOrderFragment"
+        android:label="fragment_add_order"
+        tools:layout="@layout/fragment_add_order" >
+        <action
+            android:id="@+id/action_addOrderFragment_to_orderingFragment"
+            app:destination="@id/orderingFragment" />
+    </fragment>
 </navigation>

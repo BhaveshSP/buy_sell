@@ -6,7 +6,8 @@
     <color name="colorAccent">#FFF144</color>
     <color name="white">#ffffff</color>
     <color name="hintTextColor">#CAC9B8</color>
-    <color name="textColor">#000000</color>
+    <color name="textColor">#1C1C1C</color>
     <color name="backgroundColor">#FAFAFA</color>
     <color name="bottomBarTextColor">#28AC2D</color>
+    <color name="textSecondColor">#273DB8</color>
 </resources>

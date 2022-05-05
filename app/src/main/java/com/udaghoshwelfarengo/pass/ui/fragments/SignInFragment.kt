@@ -24,6 +24,7 @@ import com.udaghoshwelfarengo.pass.network.FirebaseDao
 import com.udaghoshwelfarengo.pass.ui.activities.HomeActivity
 
 class SignInFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,7 +40,6 @@ class SignInFragment : Fragment() {
         val usernameText : EditText = view.findViewById(R.id.userNameText)
         val passwordText : EditText = view.findViewById(R.id.passwordText)
         signInButton.setOnClickListener {
-            // TODO VALIDATE DATA
             if (usernameText.text.isEmpty()){
                 Toast.makeText(requireContext(), "Enter Valid Username", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -55,20 +55,37 @@ class SignInFragment : Fragment() {
             val username = usernameText.text.toString()
             val password = passwordText.text.toString()
 
-            FirebaseDao.userDatabaseReference(phoneNumber!!,FirebaseAuth.getInstance().uid.toString()).addOnCompleteListener {
+
+            FirebaseDao.userDatabaseReference(phoneNumber!!).addOnCompleteListener {
                 if (it.isSuccessful){
                     val result = it.result
-                    val user = result.getValue(User::class.java) as User
-                    Log.d(TAG, "onViewCreated: Sucucess $user")
-                    if(username == user.username && password == user.password){
-                        goToHomeActivity()
-                    }else{
+                    try{
+                        val user = result.getValue(User::class.java) as User
+                        val editor = requireContext().getSharedPreferences(
+                            SHARED_PREF,
+                            MODE_PRIVATE).edit()
+                        editor.putString(USER_NAME_KEY,user.username)
+                        editor.apply()
+                        Log.d(TAG, "onViewCreated: Sucucess $user")
+                        if(username == user.username && password == user.password){
+                            goToHomeActivity()
+                        }else{
+                            Toast.makeText(
+                                requireContext(),
+                                "Invalid Username or Password",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }catch (e : Exception){
                         Toast.makeText(
                             requireContext(),
-                            "Invalid Username or Password",
+                            "User Data not found please Create an Acoount ",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
+
+
+
                 }else{
                     Log.d(TAG, "onViewCreated: Error Snap")
                 }

@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         goToNextActivity()
     }
     private fun goToNextActivity(){
+//        FirebaseAuth.getInstance().signOut()
         val user = FirebaseAuth.getInstance().currentUser
         val intent: Intent
         if (user == null){
